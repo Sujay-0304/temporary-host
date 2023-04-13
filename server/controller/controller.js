@@ -384,6 +384,7 @@ exports.addtocartMock = async(req,res) =>{
     BACKIMAGE = backImage;
     num = num + 1;
   }
+  console.log(num);
   if(num == 2){
   storeitems(FRONTIMAGE, BACKIMAGE);
   } 
@@ -400,15 +401,16 @@ exports.addtocartMock = async(req,res) =>{
 }
 
 async function storeitems(FRONTIMAGE, BACKIMAGE){
-  console.log("inside store items");
-  // console.log(BACKIMAGE+"******");
-   const add_to = new Cart({
-      Frontimage: FRONTIMAGE,
-      Backimage: BACKIMAGE
-    })
+  console.log("inside store items"); 
+    const add_to = new Cart({
+    Frontimage: FRONTIMAGE,
+    Backimage: BACKIMAGE,
+    price:0
+  })
     await add_to.save();
     const userCart1 = await UserCart.create({ user: cur_user, cart: add_to._id});
     await userCart1.save(); 
+    num = 0;
   
 }
 
@@ -535,6 +537,8 @@ exports.cart_clone = async(req,res) => {
     XL:exist.XL,
     XXL:exist.XXL,
     address:exist.address,
+    Frontimage:exist.Frontimage,
+    Backimage:exist.Backimage
 
   })
 

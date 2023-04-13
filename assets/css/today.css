@@ -1431,6 +1431,18 @@ footer p {
    align-items: center;
 
 }
+.modal-dialog {
+   text-align: center;
+}
+
+.modal-body {
+   margin-top: -15px;
+   margin-bottom: -20px;
+   font-weight: bold;
+}
+#btn-yes{
+   background-color: #F05A30;
+}
 
 /* SIDEBAR */
 .sidebar {
