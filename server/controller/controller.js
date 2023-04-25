@@ -26,7 +26,6 @@ app.use(session({
 var nodemailer = require('nodemailer');
 var multer=require('multer');
 
-
 const otpGen = require("otp-generator")
 
 ///////////model//////////

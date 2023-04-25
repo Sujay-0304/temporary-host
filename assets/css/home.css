@@ -7,7 +7,6 @@
 
 html {
     scroll-behavior: smooth;
-
 }
 
 html,
@@ -15,10 +14,11 @@ body {
     margin: 0;
     padding: 0;
 }
-
+#lang{
+    margin-left: -40px !important;
+}
 .banner-image {
     background-image: url('Home_bg.png');
-    /* background-image: url('Add-Your-Design.gif'); */
     background-size: cover;
     background-color: gray;
     background-blend-mode: multiply;
@@ -26,46 +26,47 @@ body {
     width: 100%;
 }
 
-    /* Carosuel */
-    .swiper{
-        width: 1000px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .carosuel-home {
-        height: 400px;
-        padding-top: 20px;
-        align-items: center;
-        margin-right: 50px;
-        margin-left: -150px !important;
-    }
-    
-    .carosuel-home-content{
-        align-items: center;
-    }
+/* Carosuel */
+.swiper {
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .swiper-cd{
-        width: fit-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.2s ease;
-        opacity: 0.5 !important;
-    }
+.carosuel-home {
+    height: 400px;
+    padding-top: 20px;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: -150px !important;
+}
 
-    #carousel-img{
-        display: block;
-        width: 220px;
-        height: 100%;
-        object-fit: cover;
-    }
+.carosuel-home-content {
+    align-items: center;
+}
 
-    .swiper-cd.active {
-        height:400px;
-        transform: scale(1.2);
-        opacity: 1 !important;
-    }
+.swiper-cd {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    opacity: 0.5 !important;
+}
+
+#carousel-img {
+    display: block;
+    width: 220px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-cd.active {
+    height: 400px;
+    transform: scale(1.2);
+    opacity: 1 !important;
+}
 
 
 
@@ -91,25 +92,29 @@ body {
 }
 
 
-.navbar ul{
+.navbar ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-.left{
+
+.left {
     display: block;
     margin-right: auto;
 }
-.right{
+
+.right {
     display: block;
     margin-left: auto;
     margin-right: -20px;
 }
-.nav-left{
+
+.nav-left {
     display: flex;
     flex-direction: row;
 }
-.nav-right{
+
+.nav-right {
     display: flex;
     flex-direction: row;
 }
@@ -137,7 +142,7 @@ body {
     display: block;
     margin-left: auto;
     margin-bottom: 20px;
-    height:450px;
+    height: 450px;
     width: 700px;
 }
 
@@ -154,16 +159,19 @@ body {
     font-weight: bold;
     text-shadow: 1px 0 #000;
 }
-.wwd-points h1{
+
+.wwd-points h1 {
     letter-spacing: 0.1rem;
     font-weight: bold;
     text-shadow: 2px 0 #000;
     margin-top: 50px;
 }
-#sp{
+
+#sp {
     color: #F05A30;
     text-shadow: #F05A30;
 }
+
 .wwd-points {
     margin-top: 50px;
     max-width: 40%;
@@ -181,14 +189,28 @@ body {
     margin-left: -20px;
 }
 
-.title-1{
+.title-1 {
     font-size: 32px !important;
+    text-shadow: 0 1px #fff;
+    font-weight: bold;
 }
-.title-2{
+
+.title-2 {
     font-size: 33px !important;
+    text-shadow: 0 1px #000;
+    font-weight: bold;
 }
-.title-3{
+
+.title-3 {
     font-size: 33px !important;
+    text-shadow: 0 1px #000;
+    font-weight: bold;
+}
+
+.title-4 {
+    font-size: 33px !important;
+    text-shadow: 0 1px #fff;
+    font-weight: bold;
 }
 
 #btn4 {
@@ -225,6 +247,9 @@ body {
     padding-bottom: 10px !important;
 }
 
+.white1 {
+    text-shadow: 1px 0 #fff;
+}
 
 .nav-link:hover {
     opacity: 0.8;
@@ -432,40 +457,40 @@ body {
 
 #font-design2 {
     z-index: 1;
-    margin-top: -25px;
+    margin-top: -38px;
     margin-left: -80px;
     margin-bottom: 30px;
 }
 
 #font-design3 {
     z-index: 1;
-    margin-top: -25px;
+    margin-top: -40px;
     margin-left: -45px;
     margin-bottom: 30px;
 }
 
 #font-design4 {
     z-index: 1;
-    margin-top: -25px;
+    margin-top: -38px;
     margin-left: -150px;
     margin-bottom: 30px;
 }
 
 #font-design5 {
     z-index: 1;
-    margin-top: -25px;
-    margin-left: -160px;
+    margin-top: -38px;
+    margin-left: -170px;
     margin-bottom: 30px;
 }
 
 #font-design7 {
-    margin-top: -0px;
+    margin-top: -10px;
     margin-left: 25px;
     z-index: 1 !important;
 }
 
 #font-design8 {
-    margin-top: -65px;
+    margin-top: -35px;
     z-index: 1 !important;
 }
 
@@ -511,14 +536,16 @@ body {
 .products {
     height: 110vh;
     background-color: #fff;
-    color:#000;
+    color: #000;
     padding-top: 50px;
     padding-bottom: 150px !important;
     margin-top: 100px;
 }
-.prod-end{
+
+.prod-end {
     margin-top: 80px;
 }
+
 .dark {
     background-color: rgba(0, 0, 0, 0.4);
 }
@@ -600,7 +627,7 @@ body {
     text-shadow: 1px 0 #000;
 }
 
-.card-content h1{
+.card-content h1 {
     font-size: 24px !important;
 }
 
@@ -695,7 +722,7 @@ body {
 
 #connect {
     background-color: #fff;
-    color:#000;
+    color: #000;
     text-shadow: 1px 0 #000;
     padding-bottom: 20px;
     padding-top: 30px;
@@ -704,7 +731,7 @@ body {
 #blog {
     background-color: #fff;
     padding-bottom: 100px;
-    color:#000;
+    color: #000;
     text-shadow: 1px 0 #000;
 }
 
@@ -732,8 +759,8 @@ body {
 }
 
 #font-design6 {
-    margin-top: -30px;
-    margin-left: -200px;
+    margin-top: -13px;
+    margin-left: -190px;
     z-index: 1;
 }
 
@@ -822,12 +849,8 @@ body {
     font-weight: 700;
 }
 
-#font-design7 {
-    margin-top: -25px;
-}
-
 #font-design9 {
-    margin-top: -30px;
+    margin-top: -15px;
     margin-left: -10px;
     z-index: 1;
     position: relative;
@@ -840,7 +863,7 @@ body {
 .clients {
     padding-top: 200px;
     padding-bottom: 200px;
-    color:#000;
+    color: #000;
 }
 
 .clients-head {
@@ -862,8 +885,8 @@ body {
 
 #font-design10 {
     z-index: 1;
-    margin-top: -70px;
-    margin-left: -270px;
+    margin-top: -30px;
+    margin-left: -240px;
 }
 
 #footer-email {
@@ -1128,19 +1151,23 @@ body {
     overflow: visible;
     margin-top: -130px;
 }
-.box-card h2{
+
+.box-card h2 {
     font-family: 'Nunito';
 }
-.card-content h2{
+
+.card-content h2 {
     font-family: 'Nunito';
     font-weight: bold;
 }
+
 .icons {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 15px;
     position: relative;
 }
+
 .swiper {
     width: 950px;
     margin-bottom: 50px;
@@ -1166,7 +1193,7 @@ body {
 .swiper-slide {
     background-color: transparent !important;
     border: none !important;
-    min-width: 300px; 
+    min-width: 300px;
 }
 
 .arrow-right {
@@ -1436,21 +1463,25 @@ body {
         align-items: flex-end !important;
     } */
 
-    .nav-left{
+    .nav-left {
         flex-direction: column !important;
     }
-    .left{
+
+    .left {
         margin-left: auto;
         margin-right: 0;
     }
-    .nav-right{
+
+    .nav-right {
         flex-direction: column !important;
         margin-right: 20px !important;
     }
-    .dropdown{
+
+    .dropdown {
         margin-left: 30px !important;
     }
-    .navbar ul{
+
+    .navbar ul {
         flex-direction: column !important;
     }
 
@@ -1567,49 +1598,62 @@ body {
     .shipping {
         background-size: cover;
     }
+
     /* animate */
-    #gif1{
+    #gif1 {
         height: 350px;
-        width: 500px;   
+        width: 500px;
     }
-    .wwd-points{
+
+    .wwd-points {
         margin-top: 20px !important;
     }
 }
-@media screen and (max-width:930px){
-    #font-design2{
+
+@media screen and (max-width:930px) {
+    #font-design2 {
         margin-top: -75px;
     }
-    #font-design3{
+
+    #font-design3 {
         margin-top: -75px;
     }
-    #font-design4{
+
+    #font-design4 {
         margin-top: -75px;
     }
-    #font-design5{
+
+    #font-design5 {
         margin-top: -75px;
     }
+
     #no1 {
         margin-top: 0px;
     }
-    .carosuel-home{
+
+    .carosuel-home {
         display: none !important;
     }
 }
-@media screen and (min-width:851px) and (max-width:930px){
-    #font-design2{
+
+@media screen and (min-width:851px) and (max-width:930px) {
+    #font-design2 {
         margin-top: -75px;
     }
-    #font-design3{
+
+    #font-design3 {
         margin-top: -75px;
     }
-    #font-design4{
+
+    #font-design4 {
         margin-top: -75px;
     }
-    #font-design5{
+
+    #font-design5 {
         margin-top: -75px;
     }
 }
+
 @media screen and (max-width:850px) {
     #car1 {
         height: 260px !important;
@@ -1653,13 +1697,15 @@ body {
     }
 
     /* animate */
-    #gif1{
+    #gif1 {
         height: 350px;
-        width: 500px;   
+        width: 500px;
     }
-    .wwd-points{
+
+    .wwd-points {
         margin-top: 20px !important;
     }
+
     /* Dashboard */
     .wwr-card {
         display: flex;
@@ -1758,12 +1804,14 @@ body {
         padding-top: 10px !important;
         line-height: 40px;
     }
+
     /* animate */
-    #gif1{
+    #gif1 {
         height: 350px;
-        width: 500px;   
+        width: 500px;
     }
-    .wwd-points{
+
+    .wwd-points {
         margin-top: 20px !important;
     }
 }
@@ -1975,6 +2023,7 @@ body {
         padding-top: 10px !important;
         line-height: 40px;
     }
+
     #gif1 {
         width: 300px;
         height: 200px;
@@ -2019,7 +2068,7 @@ body {
 
 
 @media screen and (max-width:769px) {
-   
+
     /* Home Page */
     .head {
         margin-top: 100px;
@@ -2198,6 +2247,7 @@ body {
         padding-top: 10px !important;
         line-height: 40px;
     }
+
     /* animate */
     #gif1 {
         width: 300px;
@@ -2447,9 +2497,10 @@ body {
 }
 
 @media screen and (max-width:512px) {
-    .carosuel-home{
+    .carosuel-home {
         display: none !important;
     }
+
     /* Home Page */
     .head {
         margin-top: 100px;
@@ -2536,10 +2587,12 @@ body {
     .wwr-content p {
         font-size: 16px;
     }
-    .who-we-are{
+
+    .who-we-are {
         display: inline-block;
         text-align: center;
     }
+
     /* What-we-do */
     .wwd-content-card {
         display: flex;

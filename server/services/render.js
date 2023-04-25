@@ -6,7 +6,7 @@ var multer=require('multer');
 
 
 exports.homeRoutes=(req, res)=>{
-   res.render("mainpage");
+   res.render("mainpagee");
      //res.sendFile(__dirname+'/mockup.html');
 }
 
